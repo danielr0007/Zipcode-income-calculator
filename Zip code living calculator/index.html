@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Zip Calculator</title>
+    <link rel="stylesheet" href="rent-cal.css">
+    <script src="https://kit.fontawesome.com/cd8254595d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>iRent</h2>
+            <div>
+                <h5>Login</h5>
+                <i class="fa-solid fa-circle-down"></i>        </div>
+
+        </nav>
+        <div class="banner">
+            <h1>What zip codes are right for your income?</h1>
+            <h3>According to experts, 30% of your income should be spent on rent. Find out what areas fit your budget by typing a zip code below</h3>
+            <div class="calc-container">
+                <h2>Will calculate the average yearly income for the zip you type in</h2>
+                <div class="input-container">
+                    <label for="zip">Zip Code:</label>
+                    <input type="number" id="zip" name="zip">
+                </div>
+                <button id="button">Show me the income</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Table with results -->
+    <section class="table-section hide">
+        <i class="fa-solid fa-comment-dollar"></i>
+        <h2>Your yearly income should be $<span id="avg-yearly-income">Loading...</span> to live in this area</h2>
+        <table class="income-table">
+            <thead>
+                <tr>
+                    <th>monthly income</th>
+                    <td id="avg-monthly-income">Loading...</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>hourly wage</th>
+                    <td id="avg-hourly-income">Loading...</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-container">
+            <table class="avg-rent-table">
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Monthly rent</th>
+                        <th>Rec yearly income</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fa-solid fa-circle cir one"></i> 1 room</td>
+                        <td id="one-room-avg">Loading...</td>
+                        <td id="one-room-avg-income">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-circle cir two"></i> 2 room</td>
+                        <td id="two-room-avg">Loading...</td>
+                        <td id="two-room-avg-income">Loading...</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-circle cir three"></i> 3 room</td>
+                        <td id="three-room-avg">Loading...</td>
+                        <td id="three-room-avg-income">Loading...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+    
+    <script src="rent-cal.js"></script>
+</body>
+</html>
